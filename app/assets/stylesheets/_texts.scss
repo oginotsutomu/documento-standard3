@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+.main-text{
+  height: calc(100vh - 50px);
+  width: 65%;
+  background-color: springgreen;
+  &__box{
+    padding: 20px;
+    height: 100%;
+    background-color: steelblue;
+  }
+}

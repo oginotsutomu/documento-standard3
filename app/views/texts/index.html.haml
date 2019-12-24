@@ -1,0 +1,10 @@
+- @texts.each do |text|
+  .content
+    .content__box
+      .content__box__top
+        = link_to text.title, text_path(text.id), class: "content__box__top__title"
+        -# = link_to text.title, text_path(text.id), class: "content__box__top--title"
+      .content__box__bottom
+        .content__box__bottom--userName
+        .content__box__bottom--date
+          = text.created_at

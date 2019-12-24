@@ -1,0 +1,14 @@
+.image-contents{
+  height: calc(100vh - 50px);
+  width: 35%;
+  background-color: sandybrown;
+  &__box{
+    padding: 10px;
+    height: 100%;
+    background-color: seashell;
+    &__image{
+      height: 200px;
+      width: 200px;
+    }
+  }
+}

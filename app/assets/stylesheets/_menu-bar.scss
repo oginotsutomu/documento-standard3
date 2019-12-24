@@ -1,0 +1,90 @@
+body{
+  background-color: rgba(243, 243, 242, 0.966);
+  position: fixed;
+  min-width: 650px;
+  .menu-bar{
+    height: 56px;
+    width: 100vw;
+    background-color: red;
+    padding: 0 170px;
+    display: flex;
+    justify-content: space-between;
+    &__title{
+      font-size: 30px;
+      text-decoration: none;
+      padding: 9px;
+      &__text{
+        text-decoration: none;
+        color: white;
+      }
+    }
+    &__right{
+      width: 280px;
+      &__text{
+        padding-left: 10px;
+        line-height: 56px;
+        font-size: 20px;  
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+  .contents{
+    background-size: cover;
+    background-image: url(sample5.jpeg);
+    margin: 20px auto;
+    height: calc(100vh - 50px);
+    width: 90%;
+    background-color: white;
+    overflow: scroll;
+    .content{
+      padding: 10px;
+      border-bottom: 1px solid #f6f6f6;
+      display: flex;
+      &__box{
+        width: 100%;
+        &__top{
+          font-size: 20px;
+          font-weight: bold;
+          &__title{
+            text-decoration: none;
+            color: #000000;
+            border-radius: 10px;
+            background-color: rgb(87, 241, 87);
+          }
+          &__title:hover{
+            box-shadow: 0 0 10px rgb(87, 241, 87);
+          }
+        }
+        &__bottom{
+          font-size: 15px;
+          color: rgb(63, 61, 61);
+          display: flex;
+          &--date{
+            text-decoration: none;
+            color: rgb(58, 57, 57);
+          }
+        }
+      }
+    }
+  }
+  .post{
+    height: 100%;
+    width: 100%;
+    background-color: ivory;
+    &__Title{
+      height: 50px;
+      background-color: lawngreen;
+    }
+    &__Image{
+
+    }
+    &__Date{
+
+    }
+  }
+}
+
+.wrapper{;
+  display: flex;
+}
