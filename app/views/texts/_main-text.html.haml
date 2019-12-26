@@ -3,9 +3,11 @@
     = form_with model: @text, local: true do |form|
       = form.text_field :title, placeholder: :タイトル, class: :form__title
       = form.text_area :content, placeholder: :レシピを書いてください, class: "form__text", size: "110x30"
-      = form.label :image, class: 'form__mask__image' do
+      = form.label :image, class: 'form__image' do
         = icon('fas', 'image', class: 'icon')
         = form.file_field :image, class: 'hidden'
-      = form.file_field :video, class: 'form__video'
+      = form.label :video, class: 'form__video' do
+        = icon('fas', 'video', class: 'icon')
+        = form.file_field :video, class: 'hidden'
       -# = form.submit 'Send', class: 'form__submit'
-      = form.submit '投稿する'
+      = form.submit '投稿する', class: 'form__submit'

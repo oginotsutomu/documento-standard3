@@ -6,4 +6,4 @@
     = image_tag @text.image.url size: '440x400' if @text.image.present?
   = link_to "削除", text_path(@text.id), method: 'delete', class: "postManage__delete"
   .post__Date
-    = @text.content
+    = simple_format @text.content
