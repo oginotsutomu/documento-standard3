@@ -13,9 +13,34 @@
     .form__title{
       height: 40px;
       width: 500px;
-      .form__text{
-        width: 100%;
+    }
+    .form__text{
+      width: 100%;
+    }
+    .form__image{
+      font-size: 40px;
+      padding-right: 40px;
+      .hidden {
+        display: none;
       }
     }
+    .form__video{
+      font-size: 40px;
+      padding-right: 300px;
+      .hidden{
+        display: none;
+      }
+    }
+    .form__submit{
+      background-color: rgb(14, 155, 236);
+      color: white;
+      font-size: 25px;
+      padding: 2px;
+      border: none;
+    }
   }
+}
+
+.icon{
+  color: blue;
 }

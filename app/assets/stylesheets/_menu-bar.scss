@@ -72,12 +72,12 @@ body{
     height: 100%;
     width: 100%;
     background-color: ivory;
+    overflow: scroll;
     &__Title{
       height: 50px;
       background-color: lawngreen;
     }
     &__Image{
-
     }
     &__Date{
 
