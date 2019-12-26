@@ -2,7 +2,10 @@
   .main-text__box
     = form_with model: @text, local: true do |form|
       = form.text_field :title, placeholder: :タイトル, class: :form__title
-      = form.text_area :content, class: "form__text", size: "98x32"
-      = form.file_field :image, class: 'hidden'
+      = form.text_area :content, placeholder: :レシピを書いてください, class: "form__text", size: "110x30"
+      = form.label :image, class: 'form__mask__image' do
+        = icon('fas', 'image', class: 'icon')
+        = form.file_field :image, class: 'hidden'
+      = form.file_field :video, class: 'form__video'
       -# = form.submit 'Send', class: 'form__submit'
       = form.submit '投稿する'

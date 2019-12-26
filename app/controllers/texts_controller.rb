@@ -31,6 +31,6 @@ class TextsController < ApplicationController
 
   private
   def text_params
-    params.require(:text).permit(:title, :content, :image).merge(user_id: current_user.id)
+    params.require(:text).permit(:title, :content, :image, :video).merge(user_id: current_user.id)
   end
 end

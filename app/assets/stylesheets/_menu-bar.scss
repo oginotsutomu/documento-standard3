@@ -1,11 +1,11 @@
 body{
-  background-color: rgba(243, 243, 242, 0.966);
+  background-color: rgb(85, 82, 82);
   position: fixed;
-  min-width: 650px;
+  // min-width: 650px;
   .menu-bar{
     height: 56px;
     width: 100vw;
-    background-color: red;
+    background-image: url(twitter-header.jpeg);
     padding: 0 170px;
     display: flex;
     justify-content: space-between;
@@ -15,7 +15,7 @@ body{
       padding: 9px;
       &__text{
         text-decoration: none;
-        color: white;
+        color: rgb(122, 113, 113);
       }
     }
     &__right{
