@@ -22,3 +22,21 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+# Documento Standard DB設計
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|password|string|null: false|
+|nickname|string|null: false|
+### Association
+- belongs_to :text
+
+
+## textテーブル
+|Column|Type|Options|
+|------|----|-------|
+|image|text||
+|text|text||
+|user_id|integer|null: false, foreign_key: true|
+### Association
+- belongs_to :user

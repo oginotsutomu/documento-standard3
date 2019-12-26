@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_24_092759) do
+ActiveRecord::Schema.define(version: 2019_12_26_024725) do
 
   create_table "texts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "title"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2019_12_24_092759) do
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "video"
     t.index ["user_id"], name: "index_texts_on_user_id"
   end
 

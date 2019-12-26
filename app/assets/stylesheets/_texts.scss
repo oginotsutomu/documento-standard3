@@ -4,11 +4,18 @@
 
 .main-text{
   height: calc(100vh - 50px);
-  width: 65%;
-  background-color: springgreen;
+  width: 100%;
+  // background-color: springgreen;
   &__box{
-    padding: 20px;
+    padding: 20px 100px;
     height: 100%;
-    background-color: steelblue;
+    // background-color: rgb(144, 191, 230);
+    .form__title{
+      height: 40px;
+      width: 500px;
+      .form__text{
+        width: 100%;
+      }
+    }
   }
 }
